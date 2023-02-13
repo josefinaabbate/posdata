@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #eeeff1;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.navbar {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #eeeff1;
+  position: fixed;
+  padding: 0 15px;
+  box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.3);
+  z-index: 100;
+}
+
+.active {
+  color: #be894a;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.navbar a {
+  color: #252525;
+}
+a:hover {
+  color: #be894a;
+}
+
+.container {
+  background-image: url(../img/libros\ para\ soñar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-position: center;
+}
+
+.container2 {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: #eeeff1;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.imgcontainer2 {
+  padding: 50px 50px 50px 60px;
+  width: 600px;
+  height: 450px;
+}
+h3 {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.t1 {
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 50px;
+
+  text-align: justify;
+}
+.container3 {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: #d8bb96;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.t2 {
+  padding-top: 30px;
+  padding-left: 60px;
+  width: 600px;
+  text-align: justify;
+}
+.container3 .t2 p {
+  padding-bottom: 10px;
+}
+.t2 ul li {
+  list-style-type: decimal;
+  width: 700px;
+}
+.imgcontainer3 {
+  padding: 60px 0px 60px 200px;
+  width: 700px;
+  height: 450px;
+}
+.datosextra {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  background-color: #eeeff1;
+  align-items: center;
+  padding: 10px;
+  gap: 150px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  display: flex;
+}
+.datosextra .bx {
+  font-size: 32px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.envios {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33, 3%;
+}
+.pagos {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33, 3%;
+}
+.seguridad {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33, 3%;
+}
+.piedepagina {
+  height: 150px;
+  width: 100%;
+  background-color: #d8bb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .logofooter {
+  width: 60px;
+  height: 60px;
+  justify-content: flex-end;
+} */
+.imgpiedepag {
+  display: flex;
+}
+.redes {
+  justify-content: space-evenly;
+  padding: 0px;
+}
+.redes p {
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.redes :hover {
+  color: #eeeff1;
+}
+
+.bx {
+  font-size: 32px;
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.containerproductos {
+  background-color: #d8bb96;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  padding: 110px 30px 80px 30px;
+}
+
+.imglibro {
+  width: 170px;
+  height: 270px;
+  margin-bottom: 25px;
+}
+.img {
+  box-shadow: 3px 3px 7px 1px rgba(128, 128, 128, 0.3);
+  background-color: #eeeff1;
+  width: 220px;
+  height: auto;
+  display: grid;
+  align-items: start;
+  padding: 10px;
+  justify-content: center;
+  position: relative;
+}
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #c5c5c5;
+  background-color: #252525;
+}
+.img h2 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-weight: 500;
+}
+.piedepagina2 {
+  height: 150px;
+  width: 100%;
+  background-color: #eeeff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reseña1 {
+  padding-top: 110px;
+  padding-left: 30px;
+  width: 100%;
+  height: 400px;
+  background-color: #d8bb96;
+  padding-bottom: 30px;
+  align-items: center;
+}
+.perfil .bx {
+  font-size: 80px;
+  color: rgb(116, 135, 135);
+  text-align: center;
+}
+.nombre p {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.estrellas .bx {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.reseña2 {
+  padding-top: 110px;
+  padding-left: 30px;
+  width: 100%;
+  height: 400px;
+  background-color: #eeeff1;
+  padding-bottom: 30px;
+  align-items: center;
+}
