@@ -1,74 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
 }
+
 body {
-  background-color: #eeeff1;
+  background: #d8bb96;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin: 0px auto;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-.navbar {
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 70px;
-  background-color: #eeeff1;
-  position: fixed;
-  padding: 0 15px;
-  box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.3);
-  z-index: 100;
+  width: 60px;
+  margin-top: 8px;
 }
 
-.active {
-  color: #be894a;
+nav .logo {
+  display: none;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  gap: 15px;
-  font-family: "Poppins", sans-serif;
 }
-.navbar a {
+
+nav ul li a {
   color: #252525;
+  display: block;
+  margin: 0px 2px;
+  font-weight: 400;
+  padding: 8px 18px;
+  transition: 0.5s;
 }
-a:hover {
-  color: #be894a;
+
+nav ul li a:hover {
+  color: #b57a2d;
+}
+
+nav ul li a.active {
+  color: #b57a2d;
+}
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.hamburger:hover {
+  /* background: #d8bb96; */
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #252525;
 }
 
 .container {
-  background-image: url(../img/libros\ para\ soñar.png);
+  background-image: url(../img/fotoprincipal2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: auto;
   height: calc(100vh - 70px);
   background-position: center;
 }
 
 .container2 {
   display: flex;
-  width: 100%;
-  height: 450px;
+  width: auto;
+  height: auto;
   background-color: #eeeff1;
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
+  /* max-width: 900px; */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.imgcontainer2 {
-  padding: 50px 50px 50px 60px;
-  width: 600px;
-  height: 450px;
+
+ul li a {
+  color: #252525;
 }
+
 h3 {
   padding-top: 30px;
   text-align: center;
@@ -76,54 +116,52 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 .t1 {
-  padding-top: 30px;
-  padding-left: 60px;
-  padding-right: 50px;
-
+  padding: 30px 50px;
   text-align: justify;
 }
 .container3 {
   display: flex;
-  width: 100%;
-  height: 450px;
+  width: auto;
+  height: auto;
   background-color: #d8bb96;
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
+  padding: 30px 50px;
+  justify-content: center;
+  align-items: center;
 }
-.t2 {
-  padding-top: 30px;
-  padding-left: 60px;
-  width: 600px;
-  text-align: justify;
-}
+
 .container3 .t2 p {
   padding-bottom: 10px;
 }
 .t2 ul li {
   list-style-type: decimal;
-  width: 700px;
+  width: auto;
+  text-align: justify;
+  padding: auto;
 }
-.imgcontainer3 {
+/* .imgcontainer3 {
   padding: 60px 0px 60px 200px;
   width: 700px;
   height: 450px;
-}
+} */
 .datosextra {
-  margin-top: 30px;
-  width: 100%;
-  height: 300px;
+  width: auto;
+  height: auto;
   background-color: #eeeff1;
   align-items: center;
-  padding: 10px;
-  gap: 150px;
+  padding: 15px;
+  gap: 100px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
   display: flex;
+  margin: auto;
 }
 .datosextra .bx {
   font-size: 32px;
   padding-right: 10px;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 .envios {
   flex-direction: column;
@@ -144,18 +182,15 @@ h3 {
   width: 33, 3%;
 }
 .piedepagina {
-  height: 150px;
-  width: 100%;
+  height: auto;
+  width: auto;
   background-color: #d8bb96;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
-/* .logofooter {
-  width: 60px;
-  height: 60px;
-  justify-content: flex-end;
-} */
+
 .imgpiedepag {
   display: flex;
 }
@@ -225,8 +260,8 @@ h3 {
   font-weight: 500;
 }
 .piedepagina2 {
-  height: 150px;
-  width: 100%;
+  height: auto;
+  width: auto;
   background-color: #eeeff1;
   display: flex;
   justify-content: center;
@@ -236,8 +271,8 @@ h3 {
 .reseña1 {
   padding-top: 110px;
   padding-left: 30px;
-  width: 100%;
-  height: 400px;
+  width: auto;
+  height: auto;
   background-color: #d8bb96;
   padding-bottom: 30px;
   align-items: center;
@@ -261,9 +296,90 @@ h3 {
 .reseña2 {
   padding-top: 110px;
   padding-left: 30px;
-  width: 100%;
-  height: 400px;
+  width: auto;
+  height: auto;
   background-color: #eeeff1;
   padding-bottom: 30px;
   align-items: center;
+}
+
+.formulario-contacto {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin-top: 10px;
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: #d8bb96;
+  font-family: "Poppins", sans-serif;
+}
+.respuesta {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form h4 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400px;
+}
+@media (max-width: 950px) {
+  nav {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 100;
+    width: 280px;
+    height: 100vh;
+    background-color: #eeeff1;
+    transition: 0.5s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  nav .logo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin-top: 30px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+  #nav_check:checked ~ nav {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  nav ul li a.active {
+    background-color: #be894a;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .datosextra {
+    flex-direction: column;
+    margin: 15px;
+  }
 }
