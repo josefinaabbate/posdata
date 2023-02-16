@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/logoposdata.png">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
-</head>
-<body>
-   <header>
-    <nav>
-        <div class="navbar">
-            <img src="./img/logoposdata.png" class="logo">
-        <ul>  
-            <li><a href="index.html"> Inicio</a></li>
-            <li><a href="productos.html"> Productos</a></li>
-            <li><a href="reseñas.html"> Reseñas</a></li>
-            <li><a href="editoriales.html"> Editoriales</a></li>
-            <li><a href="contacto.html"> Contacto</a></li> 
-         </ul>
-        </div>
-    </nav>
-   </header> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/logoposdata.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       
+        </head>
+    <body>
+        <header>
+            <div class="logo">
+              <img src="../img/logoposdata.png" alt="" />
+            </div>
+            <input type="checkbox" id="nav_check" hidden />
+            <nav>
+              <div class="logo">
+                <img src="../img/logoposdata.png" alt="" />
+              </div>
+      
+              <ul>
+                <li><a href="../index.html" >Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/editoriales.html"class="active">Editoriales</a></li>
+                <li><a href="../pages/contacto.html">Contactanos</a></li>
+                <li><a href="../pages/resenias.html">Resenias</a></li>
+              </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
+          </header>
+    
+    <section class="formulario-contacto">
+       
+       <form>
+            <h4>Contactanos</h4>
+            <input type="text" class="respuesta" placeholder="Ingrese su nombre">
+            <input type="text" class="respuesta"placeholder="Ingrese su apellido">
+            <input type="email" class="respuesta"placeholder="Ingrese su email">
+            <input type="password" class="respuesta"placeholder="Ingrese su contraseña">
+            <textarea cols="30" rows="10" class="respuesta"placeholder="Consulta"></textarea>
+            <input type="submit" class="respuesta"value="Enviar ahora">
+       </form>
+    </section>
+    <footer>
+    
+        <div class="piedepagina">
+            <!-- <div class="imgpiedepag"><img src="./img/logoposdata.png" class="logofooter"></div> -->
+            <div class="redes">
+               <p>Encontranos en:</p>
+            <i class='bx bxl-instagram'><a href="#"></a></i>
+            <i class='bx bxl-facebook-circle'><a href="#"></a></i>
+            <i class='bx bxl-whatsapp'><a href="#"></a></i>
+            <i class='bx bxs-envelope'><a href="#"></a></i>
+            <i class='bx bx-phone'><a href="#"></a></i>
+            </div>
+            
+        </div> 
+    
+    </footer>
+    
+       
+       </body> 
+</html>
