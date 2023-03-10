@@ -1,0 +1,42 @@
+.containerproductos {
+    background-color:$bg-color-fondo-principal;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    padding: 110px 30px 80px 30px;
+  }
+  
+  .imglibro {
+    width: 170px;
+    height: 270px;
+    margin-bottom: 25px;
+  }
+  .img {
+    box-shadow: 3px 3px 7px 1px rgba(128, 128, 128, 0.3);
+    background-color: $bg-color-fondo-secundario;
+    width: 220px;
+    height: auto;
+    display: grid;
+    align-items: start;
+    padding: 10px;
+    justify-content: center;
+    position: relative;
+  }
+  .add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #c5c5c5;
+    background-color: #252525;
+  }
+  .img h2 {
+    font-size: 14px;
+    font-family: $tipografia-principal;
+    text-align: left;
+    font-weight: 500;
+  }

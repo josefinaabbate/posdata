@@ -1,0 +1,33 @@
+.editoriales{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    padding: 110px 30px 80px 30px;
+  }
+     .logoeditorial{
+      width: 50px;
+      height: 50px;
+     }
+     .logoeditorial3{
+      width: 20px;
+      height: 20px;
+      margin-bottom: 10px;
+     }
+     .imglibroeditorial{
+      width: 250px;
+      height: 400px;
+     }
+    
+     .editorial1{
+      @include prop-flex(center,center,column);
+      padding: 20px 0;
+      margin: 20px;
+      background-color: $bg-color-fondo-secundario;
+      width: 300px;
+      height: 620px;
+
+     
+    }
+  

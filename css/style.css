@@ -8,15 +8,6 @@
   text-decoration: none;
 }
 
-body {
-  background: #d8bb96;
-  font-family: "Poppins", sans-serif;
-}
-
-img {
-  width: 100%;
-}
-
 header {
   width: 100%;
   height: 70px;
@@ -93,10 +84,9 @@ ul li {
   display: flex;
   width: auto;
   height: auto;
-  background-color: #eeeff1;
+  background-color: #fefefe;
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
-  /* max-width: 900px; */
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -139,15 +129,10 @@ h3 {
   padding: auto;
 }
 
-/* .imgcontainer3 {
-  padding: 60px 0px 60px 200px;
-  width: 700px;
-  height: 450px;
-} */
 .datosextra {
   width: auto;
   height: auto;
-  background-color: #eeeff1;
+  background-color: #fefefe;
   align-items: center;
   padding: 15px;
   gap: 100px;
@@ -164,27 +149,58 @@ h3 {
   margin-top: 10px;
 }
 
-.envios {
+.envios, .seguridad, .pagos {
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 33, 3%;
 }
 
-.pagos {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 33, 3%;
+@media (max-width: 950px) {
+  nav {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 100;
+    width: 280px;
+    height: 100vh;
+    background-color: #fefefe;
+    transition: 0.5s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  nav .logo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin-top: 30px;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  #nav_check:checked ~ nav {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav ul li a.active {
+    background-color: #be894a;
+    color: #fefefe;
+    text-align: center;
+    width: 100%;
+  }
+  .datosextra {
+    flex-direction: column;
+    margin: 15px;
+  }
 }
-
-.seguridad {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 33, 3%;
-}
-
 .piedepagina {
   height: auto;
   width: auto;
@@ -242,7 +258,7 @@ h3 {
 
 .img {
   box-shadow: 3px 3px 7px 1px rgba(128, 128, 128, 0.3);
-  background-color: #eeeff1;
+  background-color: #fefefe;
   width: 220px;
   height: auto;
   display: grid;
@@ -270,13 +286,41 @@ h3 {
   font-weight: 500;
 }
 
-.piedepagina2 {
-  height: auto;
-  width: auto;
-  background-color: #eeeff1;
+.editoriales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  padding: 110px 30px 80px 30px;
+}
+
+.logoeditorial {
+  width: 50px;
+  height: 50px;
+}
+
+.logoeditorial3 {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.imglibroeditorial {
+  width: 250px;
+  height: 400px;
+}
+
+.editorial1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: 20px;
+  background-color: #fefefe;
+  width: 300px;
+  height: 620px;
 }
 
 .formulario-contacto {
@@ -313,92 +357,50 @@ form h4 {
   font-weight: 400px;
 }
 
-@media (max-width: 950px) {
-  nav {
-    position: absolute;
-    left: -300px;
-    top: 0;
-    z-index: 100;
-    width: 280px;
-    height: 100vh;
-    background-color: #eeeff1;
-    transition: 0.5s;
-    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
-  }
-  nav .logo {
-    display: block;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 20px;
-    margin-top: 30px;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-  #nav_check:checked ~ nav {
-    left: 0;
-  }
-  .hamburger {
-    display: block;
-  }
-  nav ul li a.active {
-    background-color: #be894a;
-    color: white;
-    text-align: center;
-    width: 100%;
-  }
-  .datosextra {
-    flex-direction: column;
-    margin: 15px;
-  }
-}
-.editoriales {
+.reseñasposdata {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   gap: 1.5rem;
   align-items: center;
   justify-items: center;
   padding: 110px 30px 80px 30px;
 }
 
-.logoeditorial {
-  width: 50px;
-  height: 50px;
-}
-
-.logoeditorial3 {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 10px;
-}
-
-.imglibroeditorial {
-  width: 250px;
+.primerreseña {
+  background-color: #fefefe;
+  width: auto;
   height: 400px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-.editorial1 {
-  padding: 20px 0;
-  margin: 20px;
-  background-color: #eeeff1;
-  width: 300px;
-  height: 620px;
+.reseñausuario {
+  padding: 10px 0px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  flex-direction: column;
+  gap: 10px;
 }
 
-.primersereña {
-  background-color: #eeeff1;
-  width: 300px;
-  height: 300px;
-  margin: 20px;
+.estrellas i {
+  padding: 15px opx;
+  color: #f5d02a;
+  font-size: 27px;
+}
+
+.opinion {
+  text-align: justify;
+  padding: 12px 5px;
+}
+
+body {
+  background-color: #d8bb96;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+.piedepagina {
+    height: auto;
+    width: auto;
+    background-color: $bg-color-fondo-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .imgpiedepag {
+    display: flex;
+  }
+  .redes {
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+  .redes p {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: $tipografia-principal;
+  }
+  .redes :hover {
+    color: #eeeff1;
+  }
+  
+  .bx {
+    font-size: 32px;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+  }

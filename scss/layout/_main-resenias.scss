@@ -1,0 +1,36 @@
+.reseñasposdata{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    padding: 110px 30px 80px 30px;
+  }
+  
+  .primerreseña{
+    background-color:$bg-color-fondo-secundario;
+    width: auto;
+    height: 400px;
+   padding: 15px;
+   margin: 20px;
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+ }
+
+  .reseñausuario{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .estrellas i{
+    padding: 15px opx;
+    color:#f5d02a;
+    font-size: 27px;
+  }
+
+  .opinion{
+    text-align: justify;
+    padding: 12px 5px;
+  }
